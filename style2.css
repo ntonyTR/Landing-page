@@ -52,8 +52,10 @@
     color:#f9faf8;
 }
 
-/* this is for the header section */
-header {
+/* this is for the header, main, quote and modal section */
+header,
+main,
+.quote {
     display: flex;
     flex-direction: column;
     padding: 0 16%;
@@ -109,3 +111,48 @@ button {
     background-color: white;
 }
 
+/* this is for the main section */
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.secondary-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.card-desc {
+    text-align: center;
+    max-width: 150px;
+    font-size: 18px;
+}
+
+/* this is for the quote section */
+.quote {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    gap: 10px;
+}
+
+.quote .content {
+    align-self: center;
+    justify-self: center;
+}
+
+.quote .credit {
+    align-self: flex-end;
+    font-size: 18px;
+}
