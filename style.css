@@ -2,4 +2,159 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, .body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* this is for the header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f2937;
+    height: 50px;
+}
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+ul {
+    display: flex;
+    gap: 22px;
+    list-style-type: none;
+}
+
+/* aims to the links in header, Hero secondary and button text */
+a, 
+.container p,
+button   {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* this is for the first content section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #1f2937;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: inherit;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    align-self: flex-start;
+    padding: 6px 28px;
+    border-radius: 8px;
+}
+
+img {
+    background-color: #e5e7eb;
+}
+
+/* this is for the second content section, the 'cards' */
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+    gap: 40px 0; 
+}
+
+.cards-container, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.card img{
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+
+.card p {
+    max-width: 150px;
+}
+
+/* this is for the third content section, the 'quote' */
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 100px 350px;
+    margin-bottom: 100px;
+}
+
+blockquote {
+    font-size: 36px;
+    margin: auto;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote p {
+    font-weight: bolder;
+    font-size: 22px;
+    align-self: flex-end;
+}
+
+/* this is for the fourth content section, the 'modal' */
+.modal {
+    display: flex;
+    background-color: #3882f6;
+    margin-top: 80px;
+    margin: auto auto;
+    padding: 30px 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    color:#e5e7eb;
+    flex-wrap: wrap;
+}
+
+/* this is for the footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 100px;
+    background: #1f2937;
+    color: #e5e7eb;
+    margin-top: 80px;
 }
