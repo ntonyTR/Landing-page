@@ -1,160 +1,180 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* colors and font styles */
+.darkbg {
+    background-color: #1f2937;
+}
 
-body, .body {
+.graybg {
+    background-color: #e5e7eb;
+}
+
+.bluebg {
+    background-color: #3882f6;
+}
+
+.main-header {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.secondary-header {
+    font-size: 36px;
+    font-weight: 900;
+    columns: #1f2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.signup {
+    font-size: 18px;
+    font-weight: bold;
+    color:#f9faf8;
+}
+
+/* this is for the header, main, quote and modal section */
+header,
+main,
+.quote,
+footer {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    padding: 0 10%;
+}
+/* this add the border to img */
+img {
+    border: 4px solid #3882f6 ;
+    border-radius: 10px;
 }
 
-/* this is for the header */
-header {
+/* this is for the nav */
+.nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: #1f2937;
-    height: 50px;
-}
-.logo {
-    color: #f9faf8;
-    font-size: 24px;
-    font-weight: bolder;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 60px;
 }
 
 ul {
     display: flex;
+    list-style: none;
     gap: 22px;
-    list-style-type: none;
 }
 
-/* aims to the links in header, Hero secondary and button text */
-a, 
-.container p,
-button   {
+a {
     text-decoration: none;
-    color: #e5e7eb;
-    font-size: 18px;
 }
 
-/* this is for the first content section */
-.content {
+/* this is for the hero section */
+.hero {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    background-color: #1f2937;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    gap: 70px;
 }
 
-.container {
+.hero .left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: inherit;
+    gap: 12px;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
+.left button {
+    align-self: flex-start;    
 }
 
 button {
-    background-color: #3882f6;
-    color: white;
-    align-self: flex-start;
-    padding: 6px 28px;
-    border-radius: 8px;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: 2px solid #f9faf8;
 }
 
-img {
-    background-color: #e5e7eb;
+.hero .right {
+    width: 500px;
+    height: 200px;
+    flex: none;
 }
 
-/* this is for the second content section, the 'cards' */
+/* this is for the main section */
 .cards-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 60px;
-    gap: 40px 0; 
-}
-
-.cards-container, h2 {
-    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-h2 {
-    font-size: 36px;
-    font-weight: bolder;
-    color: #1f2937;
-}
-
-.card img{
-    border: 2px solid #3882f6;
-    border-radius: 8px;
-}
-
-.card p {
-    max-width: 150px;
-}
-
-/* this is for the third content section, the 'quote' */
-.quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background-color: #e5e7eb;
-    color: #1f2937;
-    padding: 100px 350px;
     margin-bottom: 100px;
 }
 
-blockquote {
-    font-size: 36px;
-    margin: auto;
-    font-style: italic;
-    font-weight: lighter;
+.secondary-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.quote p {
-    font-weight: bolder;
-    font-size: 22px;
-    align-self: flex-end;
-}
-
-/* this is for the fourth content section, the 'modal' */
-.modal {
+.cards-container {
     display: flex;
-    background-color: #3882f6;
-    margin-top: 80px;
-    margin: auto auto;
-    padding: 30px 60px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 6px;
-}
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    color:#e5e7eb;
+    gap: 150px;
     flex-wrap: wrap;
+}
+
+.card-desc {
+    text-align: center;
+    max-width: 150px;
+    font-size: 18px;
+}
+
+/* this is for the quote section */
+.quote {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.quote .content {
+    align-self: center;
+    justify-self: center;
+    padding: 0 60px;
+}
+
+.quote .credit {
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+/* this is for the modal section */
+.modal {
+    margin: 70px 10%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 /* this is for the footer */
 footer {
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 18px;
-    height: 100px;
-    background: #1f2937;
-    color: #e5e7eb;
-    margin-top: 80px;
+    align-items: center;
 }
