@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* colors and font styles */
+.darkbg {
+    background-color: #1f2937;
+}
+
+.graybg {
+    background-color: #e5e7eb;
+}
+
+.bluebg {
+    background-color: #3882f6;
+}
+
+.main-header {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.secondary-header {
+    font-size: 36px;
+    font-weight: 900;
+    columns: #1f2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.signup {
+    font-size: 18px;
+    font-weight: bold;
+    color:#f9faf8;
+}
+
+/* this is for the header section */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16%;
+}
+
+/* this is for the nav */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 60px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* this is for the hero section */
+.hero {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero .right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.right button {
+    align-self: flex-start;    
+}
+
+button {
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: 2px solid #f9faf8;
+}
+
+.hero .left {
+    width: 500px;
+    height: 200px;
+    flex: none;
+    background-color: white;
+}
+

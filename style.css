@@ -12,7 +12,7 @@ body, .body {
 }
 
 /* this is for the header */
-.header {
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;

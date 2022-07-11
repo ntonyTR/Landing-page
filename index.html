@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Landing Page</title>
 </head>
 <body>
-    <nav class="header">   
-        <div class="logo">Header Logo</div>
-        <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-        </ul>
-    </nav>
-    <div class="body">
-        <div class="content">
-            <div class="container">
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here under the main titile. It's a smaller font and the color is lower contrast.</p>
-                <button>Sign up</button>
+
+    <header class="darkbg">
+        <nav class="nav">
+            <div class="left">
+                <div id="logo">Header Logo</div>
             </div>
-            <img src="#" alt="this is a plceholder for an image" width="500" height="250px">
+            <div class="right">
+                <ul>
+                    <li><a class="secondary" href="#">header link one</a></li>
+                    <li><a class="secondary" href="#">header link two</a></li>
+                    <li><a class="secondary" href="#">header link three</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="right">
+                <h1 class="main-header">This website is awesome</h1>
+                <p class="secondary">This website has some subtext that goes here under the main titile. It's a smaller font and the color is lower contrast.</p>
+                <button class="signup bluebg">Sign up</button>
+            </div>
+            <div class="left">
+                <img src="#" alt="this is a plceholder for an image">
+            </div>
         </div>
+    </header>
+
+    <main>
         <div class="cards-section">
-            <h2>Some random information.</h2>
+            <h2 class="secondary-header">Some random information.</h2>
             <div class="cards-container">
                 <div class="card">
-                    <img src="#" alt="" width="150px" height="150px">
-                    <p>this is some subtext under an ilustration or image</p>
+                    <img src="#" alt="" width="150px" height="150px">                        <p>this is some subtext under an ilustration or image</p>
                 </div>
                 <div class="card">
                     <img src="#" alt="" width="150px" height="150px">
@@ -46,20 +55,24 @@
                 </div>
             </div>
         </div>
-        <div class="quote">
-            <blockquote>
-                <em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read ir. Who knows? All I know is that it looks nice.</em>
-            </blockquote>
-            <p>-Thor, God of Thunder</p>
+    </main>
+
+    <div class="quote graybg">
+        <em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read ir. Who knows? All I know is that it looks nice.</em>
+        <p>- Thor, God of Thunder</p>
+    </div>
+
+    <div class="modal bluebg">
+        <div class="left">
+            <h3>Call to action! It's time!</h3>
+            <p>Sign up for our product by clicking that button right over there!</p>
         </div>
-        <div class="modal">
-            <div class="modal-content">
-                <h3>Call to action! It's time!</h3>
-                <p>Sign up for our product by clicking that button right over there!</p>
-            </div>
-            <button>Sign up</button>
+        <div class="right">
+            <button class="signup bluebg">Sign up</button>
         </div>
     </div>
-    <footer> Copyright The Odin Project 2021</footer>
+
+    <footer class="darkbg"> Copyright The Odin Project 2021</footer>
+
 </body>
 </html>
