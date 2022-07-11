@@ -144,15 +144,24 @@ button {
 .quote {
     padding-top: 100px;
     padding-bottom: 80px;
-    gap: 10px;
 }
 
 .quote .content {
     align-self: center;
     justify-self: center;
+    padding: 0 60px;
 }
 
 .quote .credit {
     align-self: flex-end;
     font-size: 18px;
+}
+
+/* this is for the modal section */
+.modal {
+    margin: 70px 16%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
 }
